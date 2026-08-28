@@ -22,5 +22,6 @@
 </main>
 <script>document.querySelectorAll('.card input').forEach(function(input){input.addEventListener('change',function(){this.parentElement.classList.toggle('done',this.checked);var all=[].slice.call(document.querySelectorAll('.card input'));var done=all.filter(function(x){return x.checked}).length;document.getElementById('count').textContent=done+' / '+all.length;document.getElementById('bar').style.width=(done/all.length*100)+'%'})})</script>
 </body>
+<!-- Pages deployment refresh -->
 </html>
 
