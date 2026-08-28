@@ -23,15 +23,15 @@ tbd:['10/3 伊斯坦布尔 → 达拉曼国内航班','10/5 安塔利亚 → 开
 
 const dayGuides=[
 {images:['assets/itinerary/istanbul-blue-mosque.jpg','assets/itinerary/istanbul-water.jpg'],captions:['蓝色清真寺 · 初见伊斯坦布尔','博斯普鲁斯与老城天际线'],play:['落地后的第一天只安排老城轻松散步，先把时差和旅途疲惫放下。','蓝色清真寺注意礼拜时段与着装，现场开放情况临近出发再确认。','如果精神状态好再去地下水宫，不把“抵达日”排成赶场日。']},
-{images:['assets/itinerary/istanbul-water.jpg','assets/itinerary/istanbul-blue-mosque.jpg'],captions:['从水边看伊斯坦布尔','苏丹艾哈迈德的城市轮廓'],play:['托普卡帕宫预留半天，重点看宫廷空间、珍宝与博斯普鲁斯视野。','下午把时间留给居尔哈内公园、香料市场或一杯土耳其咖啡。','这一天不叠加考古博物馆，让人文体验有呼吸感。']},
+{images:['assets/itinerary/topkapi-palace.jpg','assets/itinerary/grand-bazaar.jpg'],captions:['托普卡帕宫 · 奥斯曼旧梦','大巴扎 · 在色彩与香气里慢慢逛'],play:['托普卡帕宫预留半天，重点看宫廷空间、珍宝与博斯普鲁斯视野。','下午把时间留给居尔哈内公园、香料市场或一杯土耳其咖啡。','这一天不叠加考古博物馆，让人文体验有呼吸感。']},
 {images:['assets/itinerary/oludeniz-aerial.jpg','assets/itinerary/oludeniz-coast.jpg'],captions:['厄吕代尼兹 · 地中海蓝','海边与山谷之间'],play:['优先选上午抵达达拉曼的航班，取车后不再安排复杂景点。','滑翔伞只在天气、时间和体力都合适时参加；不合适就留在海边。','取车时拍摄全车视频，重点记录轮胎、玻璃、轮毂和已有划痕。']},
-{images:['assets/itinerary/oludeniz-coast.jpg','assets/itinerary/oludeniz-aerial.jpg'],captions:['D400 · 山海公路的蓝','沿着海岸慢慢开'],play:['这天不做小时级时间表，漂亮海湾、咖啡馆和观景点都可以临时停。','卡普塔什停车困难时不要为机位冒险，安全和体验比照片更重要。','唯一硬指标是天黑前住进卡什，晚上只逛港口和老城小巷。']},
-{images:['assets/itinerary/oludeniz-coast.jpg','assets/itinerary/cappadocia-valley.jpg'],captions:['D400 的最后一段海岸','从地中海转场到格雷梅'],play:['沿途停留服从航班和还车时间，米拉古城时间不够就直接取消。','安塔利亚机场还车前补足油量，并预留检查车辆与办理手续的时间。','开塞利落地后直接接送前往格雷梅，洞穴酒店连续住三晚。']},
+{images:['assets/itinerary/kaputas-beach.jpg','assets/itinerary/kas-harbor.jpg'],captions:['卡普塔什 · D400 上最耀眼的蓝','卡什港口 · 把车停下以后慢慢走'],play:['这天不做小时级时间表，漂亮海湾、咖啡馆和观景点都可以临时停。','卡普塔什停车困难时不要为机位冒险，安全和体验比照片更重要。','唯一硬指标是天黑前住进卡什，晚上只逛港口和老城小巷。']},
+{images:['assets/itinerary/antalya-marina.jpg','assets/itinerary/goreme-arrival.jpg'],captions:['安塔利亚港 · 告别地中海','日落时抵达卡帕多奇亚'],play:['沿途停留服从航班和还车时间，米拉古城时间不够就直接取消。','安塔利亚机场还车前补足油量，并预留检查车辆与办理手续的时间。','开塞利落地后直接接送前往格雷梅，洞穴酒店连续住三晚。']},
 {images:['assets/cappadocia-hero.jpg','assets/itinerary/cappadocia-museum.jpg'],captions:['卡帕多奇亚 · 热气球清晨','格雷梅岩窟与大地色'],play:['热气球是全程最高优先级，前一晚尽早休息并等待运营方确认。','若顺利飞行，早餐后可以补觉，不需要从凌晨一直逛到晚上。','下午看格雷梅露天博物馆，爱情谷和玫瑰谷只选一个。']},
-{images:['assets/itinerary/underground-city.jpg','assets/itinerary/cappadocia-valley.jpg'],captions:['地下城 · 岩层下的世界','卡帕多奇亚的山谷与光'],play:['如果前一天热气球取消，今天继续等第二次机会，老爷车自动让位。','地下城只选代林库尤或凯马克勒其中一个，避免重复和体力消耗。','下午可以去乌奇希萨尔、鸽子谷，也可以回酒店喝咖啡。']},
-{images:['assets/itinerary/cappadocia-valley.jpg','assets/itinerary/bosphorus-ferry.jpg'],captions:['慢慢告别卡帕多奇亚','飞回伊斯坦布尔'],play:['上午睡醒再出门，补一个真正喜欢却没来得及去的地方。','优先选择内夫谢希尔机场的下午或傍晚航班，减少无效等待。','回到伊斯坦布尔后只安排晚餐和附近散步。']},
-{images:['assets/itinerary/bosphorus-sunset.jpg','assets/itinerary/bosphorus-ferry.jpg'],captions:['博斯普鲁斯 · 日落收尾','渡轮穿过伊斯坦布尔'],play:['上午把两到三小时完整留给伊斯坦布尔考古博物馆。','下午在卡拉柯伊与加拉塔慢慢走，排队太长就不登塔。','日落游船最好覆盖白天、落日、蓝调与两岸亮灯四个时段。']},
-{images:['assets/itinerary/bosphorus-ferry.jpg','assets/itinerary/istanbul-water.jpg'],captions:['最后一次看博斯普鲁斯','把旅程带回家'],play:['上午不安排正式景点，只吃早餐、附近散步和整理行李。','建议 10:00—10:30 离开酒店，为国际航班留足余量。','把票据、照片和重要文件分别备份，再慢慢和城市告别。']}
+{images:['assets/itinerary/underground-city.jpg','assets/itinerary/uchisar-castle.jpg'],captions:['地下城 · 岩层下的世界','乌奇希萨尔 · 站上卡帕多奇亚高处'],play:['如果前一天热气球取消，今天继续等第二次机会，老爷车自动让位。','地下城只选代林库尤或凯马克勒其中一个，避免重复和体力消耗。','下午可以去乌奇希萨尔、鸽子谷，也可以回酒店喝咖啡。']},
+{images:['assets/itinerary/cappadocia-valley.jpg','assets/itinerary/goreme-town.jpg'],captions:['慢慢告别卡帕多奇亚','格雷梅小镇与山谷的最后一眼'],play:['上午睡醒再出门，补一个真正喜欢却没来得及去的地方。','优先选择内夫谢希尔机场的下午或傍晚航班，减少无效等待。','回到伊斯坦布尔后只安排晚餐和附近散步。']},
+{images:['assets/itinerary/istanbul-archaeology.jpg','assets/itinerary/bosphorus-sunset.jpg'],captions:['伊斯坦布尔考古博物馆','博斯普鲁斯 · 从日落驶入蓝调'],play:['上午把两到三小时完整留给伊斯坦布尔考古博物馆。','下午在卡拉柯伊与加拉塔慢慢走，排队太长就不登塔。','日落游船最好覆盖白天、落日、蓝调与两岸亮灯四个时段。']},
+{images:['assets/itinerary/bosphorus-ferry.jpg','assets/itinerary/istanbul-airport.jpg'],captions:['最后一次看博斯普鲁斯','从伊斯坦布尔机场，把旅程带回家'],play:['上午不安排正式景点，只吃早餐、附近散步和整理行李。','建议 10:00—10:30 离开酒店，为国际航班留足余量。','把票据、照片和重要文件分别备份，再慢慢和城市告别。']}
 ];
 let selectedItineraryDay=0,galleryIndex=0;
 
