@@ -10,16 +10,19 @@ const trip={days:[
 {d:9,date:'10 月 9 日',city:'伊斯坦布尔',route:'考古博物馆 → 卡拉柯伊 / 加拉塔 → 博斯普鲁斯',core:'考古博物馆 + 博斯普鲁斯日落游船',must:['伊斯坦布尔考古博物馆','博斯普鲁斯海峡日落游船（超级必打卡）'],high:[],optional:['卡拉柯伊','加拉塔街区','加拉塔塔（排队不长再登）'],stay:'伊斯坦布尔（酒店 TBD）',note:'游船目标覆盖白天、日落、蓝调和两岸亮灯；晚上安排稍好的最后晚餐。'},
 {d:10,date:'10 月 10 日',city:'伊斯坦布尔',route:'酒店 → 伊斯坦布尔机场 → 成都 → 北京',core:'离境',must:[],high:[],optional:[],stay:'返程途中',note:'15:40 当地起飞；不安排正式景点；建议 10:00—10:30 离开酒店。'}],
 tips:[
-{cat:'钱与支付',title:'机场取土耳其里拉',status:'已确认',text:'落地伊斯坦布尔机场后优先找 VakıfBank（瓦克夫银行）ATM；首次取 5,000—6,000 TRY。不够后续再取。遇到 Currency Conversion 时选择 TRY、Without Conversion / Decline Conversion，拒绝 DCC 人民币动态换汇。'},
-{cat:'钱与支付',title:'准备 500 欧元现金',status:'当前计划',text:'国内提前准备 500 EUR 备用，主要用于热气球等欧元报价项目；现金价可能更优，但不代表一定全部花掉，最终以供应商规则为准。'},
-{cat:'手机网络',title:'A2644 不支持 eSIM',status:'已确认',text:'iPhone 13 Pro Max 国行 A2644 使用实体旅游 Nano SIM；优先能接入 Turkcell 的产品，10 天建议至少 20GB 且支持热点。国内号保留收短信，关闭数据漫游，可开最低限度国际漫游备用。'},
-{cat:'租车',title:'Cizgi 自动挡自驾',status:'部分待确认',text:'10/3 达拉曼机场取车、10/5 安塔利亚机场异地还车；主驾驶为中国 C2，只租自动挡。下单前需 Cizgi 书面确认中国驾照原件 + 英文翻译件及招行 Amex 是否可用。'},
-{cat:'预订',title:'Klook 只作为比价渠道',status:'已确认',text:'可用于热气球、老爷车、滑翔伞、接送和门票；方便但不默认最便宜。高价项目同时比较 Klook、官网、酒店 / 当地代理。'},
-{cat:'天气',title:'10 月初穿衣重点',status:'行李参考',text:'伊斯坦布尔白天约 18—23℃、早晚 12—16℃且可能秋雨；D400 白天约 24—28℃；格雷梅白天约 18—22℃，热气球凌晨约 5—9℃，重点防风、分层穿衣。'},
-{cat:'天气',title:'热气球重点看风',status:'出发前核验',text:'真正需要重点关注的是 10/6—10/7 清晨风况。实时天气不得提前写死，临近出发再核验。'},
+{cat:'钱与支付',title:'现金、取现与 DCC',status:'当前计划',text:'国内准备约 500 EUR 作为热气球等欧元报价项目的备用现金；落地后先小额取 5,000—6,000 TRY，不够再取。ATM 或刷卡机出现 Currency Conversion 时选择 TRY、Without Conversion / Decline Conversion，拒绝人民币 DCC。'},
+{cat:'手机网络',title:'A2644 使用实体 SIM',status:'已确认',text:'iPhone 13 Pro Max 国行 A2644 不支持 eSIM；准备至少 20GB、支持热点、优先接入 Turkcell 的实体 Nano SIM。国内号保留收验证码，关闭数据漫游，并留最低限度国际漫游作备用。'},
+{cat:'航班行李',title:'每一段行李额都要单独看',status:'出票后核验',text:'国际段、三段土耳其国内航班和成都转北京的返程联程，行李额可能不同；出票后逐段核对托运件数、重量、手提额度与移动电源规则。中国境内航班使用的充电宝需有清晰 3C 标识、非召回型号，并随身携带。'},
+{cat:'租车',title:'Cizgi 自动挡自驾',status:'部分待确认',text:'10/3 达拉曼机场取车、10/5 安塔利亚机场异地还车；主驾驶为中国 C2，只租自动挡。下单前需 Cizgi 书面确认驾照原件 + 英文翻译件、保险免赔、异地还车费及招行 Amex 是否可用。'},
+{cat:'景点规则',title:'清真寺：礼拜、着装与脱鞋',status:'现场规则',text:'蓝色清真寺等宗教场所在礼拜时段可能暂停游客进入；入内需脱鞋，衣着覆盖肩膀和膝盖，女生准备轻薄头巾或披肩更方便。现场规则和开放情况以当天公告为准。'},
+{cat:'景点规则',title:'老城景点别把时间与票价写死',status:'出发前核验',text:'托普卡帕宫通常周二闭馆，本行程安排在周五；圣索菲亚、地下水宫、大巴扎和加拉塔塔的开放区域、休息日、票价及维修情况可能调整，出发前查官网，排队过长就按备选方案取舍。'},
+{cat:'景点规则',title:'博斯普鲁斯与格雷梅日落',status:'玩法建议',text:'博斯普鲁斯游船优先选择能覆盖白天、日落、蓝调与两岸亮灯的班次；格雷梅观景台提前步行上山等日落。两处都不必为了固定机位赶时间，天气不好就留白。'},
+{cat:'预订',title:'Klook 只作为比价渠道',status:'已确认',text:'可用于热气球、老爷车、滑翔伞、接送和门票；方便但不默认最便宜。高价项目同时比较 Klook、官网、酒店和当地代理，并核对取消规则与保险。'},
+{cat:'天气穿衣',title:'分层、防晒和雨具就够了',status:'行李参考',text:'伊斯坦布尔可能秋雨，D400 日晒较强，格雷梅热气球清晨寒冷；不按截图机械准备固定件数，带防风分层衣物、轻便雨具、SPF50+ 防晒、墨镜和舒适旧鞋即可。'},
+{cat:'天气穿衣',title:'热气球重点看风',status:'出发前核验',text:'真正需要重点关注的是 10/6—10/7 清晨风况。实时天气不能提前写死，临近出发再看运营方通知；取消时按既定备用顺序调整。'},
 {cat:'体验规则',title:'热气球优先于老爷车',status:'固定规则',text:'10/6 若热气球取消，10/7 继续坐热气球；只有 10/6 已成功，10/7 清晨才安排老爷车追气球。'},
-{cat:'保险',title:'项目保险不能替代旅行险',status:'高风险',text:'需购买完整境外旅行保险，覆盖医疗、紧急救援等；如果参加滑翔伞，应明确覆盖滑翔伞 / 高风险运动。'}],
-tbd:['10/3 伊斯坦布尔 → 达拉曼国内航班','10/5 安塔利亚 → 开塞利国内航班','10/8 内夫谢希尔 → 伊斯坦布尔国内航班','所有酒店','Cizgi 具体车型 / 价格 / 保险','Cizgi 对中国驾照翻译件的书面确认','Cizgi 是否接受招行 Amex','热气球公司和价格','老爷车供应商','是否最终参加滑翔伞','实体 SIM 具体商品','旅行保险产品','博斯普鲁斯日落游船具体班次','景点最终开放时间与票价','临近出发的实际天气']};
+{cat:'保险',title:'项目保险不能替代旅行险',status:'高风险',text:'需购买完整境外旅行保险，覆盖医疗、紧急救援、旅行中断等；参加热气球或滑翔伞前，再确认高风险运动是否在保障范围内。'}],
+tbd:['三段土耳其国内航班：时刻、机场与行李额','所有酒店及免费取消期限','Cizgi：车型、价格、保险、驾照材料与信用卡','热气球：公司、价格、取消规则与保险','老爷车供应商（仅热气球已成功时预订）','是否参加滑翔伞及运营商保险','实体 SIM 具体商品','境外旅行保险产品','日落游船班次与重点景点最终开放信息','临近出发的天气及 10/6—10/7 风况']};
 
 const dayGuides=[
 {images:['assets/itinerary/istanbul-blue-mosque.jpg','assets/itinerary/istanbul-water.jpg'],captions:['蓝色清真寺 · 初见伊斯坦布尔','博斯普鲁斯与老城天际线'],play:['落地后的第一天只安排老城轻松散步，先把时差和旅途疲惫放下。','蓝色清真寺注意礼拜时段与着装，现场开放情况临近出发再确认。','如果精神状态好再去地下水宫，不把“抵达日”排成赶场日。']},
@@ -42,10 +45,10 @@ const groups=[
 ['电话卡与离线',[['已确认 A2644 不支持 eSIM',1],['购买 ≥20GB、支持热点、优先 Turkcell 的实体 Nano SIM'],['国内号保留收验证码，并关闭数据漫游'],['下载 Google Maps 离线地图与 Translate 土耳其语包']]],
 ['旅行保险',[['两人购买境外旅行保险',0,1],['确认境外医疗与紧急救援额度',0,1],['确认航班 / 行李延误与旅行中断保障'],['确认热气球及滑翔伞等高风险运动承保',0,1]]],
 ['核心体验',[['选择正规热气球公司，优先预订 10/6、10/7 备用',0,1],['确认热气球价格、取消规则、支付方式与保险'],['仅在 10/6 热气球成功后安排 10/7 老爷车'],['滑翔伞按天气和体力决定，并确认基础保险']]],
-['关键装备',[['欧标 Type C/F 转换插头、充电宝与车载充电'],['防风分层衣物、舒适步行鞋与轻便雨具'],['常用药与晕车 / 晕船药']]],
-['出发前 72 小时',[['完成国际值机，并复核三段土耳其国内航班',0,1],['复核全部酒店、Cizgi 与接送订单'],['复核热气球订单及集合通知',0,1],['确认保险生效、电话卡、离线地图与重要凭证'],['复核伊斯坦布尔、D400 天气及 10/6—10/7 格雷梅风况',0,1]]]];
+['关键装备',[['欧标 Type C/F 转换插头、车载充电及有清晰 3C 标识的充电宝'],['防风分层衣物、舒适旧鞋、轻便雨具、防晒用品与墨镜'],['清真寺用轻薄头巾 / 披肩、常用药与晕车 / 晕船药']]],
+['出发前 72 小时',[['完成国际值机，并逐段复核全部航班的机场、行李额与移动电源规则',0,1],['复核全部酒店、Cizgi 与接送订单'],['复核热气球订单及集合通知',0,1],['确认保险生效、电话卡、离线地图与重要凭证'],['复核伊斯坦布尔、D400 天气及 10/6—10/7 格雷梅风况',0,1]]]];
 
-const key='turkiye-2026-checks-v2',favKey='turkiye-2026-favs-v1',tbdKey='turkiye-2026-tbd-v1';let saved={},favs=[],tbdSaved={};try{saved=JSON.parse(localStorage.getItem(key)||'{}')}catch(e){}try{favs=JSON.parse(localStorage.getItem(favKey)||'[]')}catch(e){}try{tbdSaved=JSON.parse(localStorage.getItem(tbdKey)||'{}')}catch(e){}
+const key='turkiye-2026-checks-v3',favKey='turkiye-2026-favs-v2',tbdKey='turkiye-2026-tbd-v2';let saved={},favs=[],tbdSaved={};try{const current=localStorage.getItem(key);if(current)saved=JSON.parse(current)||{};else{saved=JSON.parse(localStorage.getItem('turkiye-2026-checks-v2')||'{}');['g6i0','g6i1','g6i2','g7i0'].forEach(id=>delete saved[id]);localStorage.setItem(key,JSON.stringify(saved))}}catch(e){}try{favs=JSON.parse(localStorage.getItem(favKey)||'[]')}catch(e){}try{tbdSaved=JSON.parse(localStorage.getItem(tbdKey)||'{}')}catch(e){}
 const idFor=(g,i)=>'g'+g+'i'+i;const isDone=(g,i,initial)=>Object.prototype.hasOwnProperty.call(saved,idFor(g,i))?saved[idFor(g,i)]:!!initial;
 const allChecks=()=>groups.flatMap((g,gi)=>g[1].map((item,i)=>({gi,i,item,done:isDone(gi,i,item[1])})));
 function progress(){const all=allChecks(),done=all.filter(x=>x.done).length,p=Math.round(done/all.length*100);['home','check'].forEach(n=>{const r=document.getElementById(n+'-ring');r.style.setProperty('--p',p);r.dataset.label=p+'%';document.getElementById(n+'-bar').style.width=p+'%'});homeCount.textContent=done+' / '+all.length;homeProgressText.textContent='已完成 '+done+' 项';checkProgressText.textContent=p+'% 已完成';checkSummary.textContent=done+' 项完成 · '+(all.length-done)+' 项待办';const next=all.find(x=>!x.done);nextTask.textContent=next?next.item[0]:'全部完成，准备出发！'}
