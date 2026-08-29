@@ -1,5 +1,5 @@
-const CACHE='turkiye-trip-v13';
-const SHELL=['./','./index.html','./styles.css?v=9','./app.js?v=11','./manifest.webmanifest','./photo-credits.html','./assets/cappadocia-hero.webp','./assets/cappadocia-hero-720.webp'];
+const CACHE='turkiye-trip-v14';
+const SHELL=['./','./index.html','./styles.css?v=10','./app.js?v=12','./manifest.webmanifest','./photo-credits.html','./assets/cappadocia-hero.webp','./assets/cappadocia-hero-720.webp'];
 
 self.addEventListener('install',event=>event.waitUntil(
   caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())

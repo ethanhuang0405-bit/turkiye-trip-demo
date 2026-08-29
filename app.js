@@ -58,7 +58,7 @@ function updateLightbox(){const guide=dayGuides[selectedItineraryDay];lightboxIm
 function openLightbox(){updateLightbox();lightbox.hidden=false;document.body.classList.add('lightbox-open');document.getElementById('lightbox-close').focus()}
 function closeLightbox(){lightbox.hidden=true;document.body.classList.remove('lightbox-open');lightboxImage.removeAttribute('src');document.querySelector('.day-gallery>img')?.focus?.()}
 function shiftLightbox(step){const guide=dayGuides[selectedItineraryDay];galleryIndex=(galleryIndex+step+guide.images.length)%guide.images.length;updateLightbox()}
-document.addEventListener('click',event=>{if(event.target.matches('.day-gallery>img'))openLightbox()});
+document.addEventListener('click',event=>{const gallery=event.target.closest('.day-gallery');if(gallery&&!event.target.closest('button'))openLightbox()});
 document.getElementById('lightbox-close').onclick=closeLightbox;document.getElementById('lightbox-prev').onclick=()=>shiftLightbox(-1);document.getElementById('lightbox-next').onclick=()=>shiftLightbox(1);lightbox.onclick=event=>{if(event.target===lightbox)closeLightbox()};
 document.addEventListener('keydown',event=>{if(lightbox.hidden)return;if(event.key==='Escape')closeLightbox();if(event.key==='ArrowLeft')shiftLightbox(-1);if(event.key==='ArrowRight')shiftLightbox(1)});
 let lightboxTouchX=0;lightbox.addEventListener('touchstart',event=>{if(event.touches.length===1)lightboxTouchX=event.touches[0].clientX},{passive:true});lightbox.addEventListener('touchend',event=>{if(!lightboxTouchX||event.changedTouches.length!==1)return;const delta=event.changedTouches[0].clientX-lightboxTouchX;lightboxTouchX=0;if(Math.abs(delta)>48)shiftLightbox(delta>0?-1:1)},{passive:true});
