@@ -1,5 +1,39 @@
-const CACHE='turkiye-trip-v11',ASSETS=['./','./index.html','./styles.css?v=7','./app.js?v=9','./manifest.webmanifest','./photo-credits.html','./assets/cappadocia-hero.jpg','./assets/itinerary/istanbul-blue-mosque.jpg','./assets/itinerary/istanbul-water.jpg','./assets/itinerary/oludeniz-aerial.jpg','./assets/itinerary/oludeniz-coast.jpg','./assets/itinerary/cappadocia-valley.jpg','./assets/itinerary/cappadocia-museum.jpg','./assets/itinerary/bosphorus-sunset.jpg','./assets/itinerary/bosphorus-ferry.jpg','./assets/itinerary/underground-city.jpg','./assets/itinerary/topkapi-palace.jpg','./assets/itinerary/grand-bazaar.jpg','./assets/itinerary/kaputas-beach.jpg','./assets/itinerary/kas-harbor.jpg','./assets/itinerary/antalya-marina.jpg','./assets/itinerary/goreme-arrival.jpg','./assets/itinerary/uchisar-castle.jpg','./assets/itinerary/goreme-town.jpg','./assets/itinerary/istanbul-archaeology.jpg','./assets/itinerary/istanbul-airport.jpg'];
-self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting())));
-self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
-self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(fetch(e.request).then(r=>{const x=r.clone();caches.open(CACHE).then(c=>c.put(e.request,x));return r}).catch(()=>caches.match(e.request).then(x=>x||caches.match('./index.html'))))});
+const CACHE='turkiye-trip-v12';
+const SHELL=['./','./index.html','./styles.css?v=8','./app.js?v=10','./manifest.webmanifest','./photo-credits.html','./assets/cappadocia-hero.webp','./assets/cappadocia-hero-720.webp'];
+
+self.addEventListener('install',event=>event.waitUntil(
+  caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())
+));
+
+self.addEventListener('activate',event=>event.waitUntil(
+  caches.keys()
+    .then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key))))
+    .then(()=>self.clients.claim())
+));
+
+self.addEventListener('fetch',event=>{
+  if(event.request.method!=='GET')return;
+
+  if(event.request.destination==='image'){
+    event.respondWith(caches.match(event.request).then(cached=>{
+      const fresh=fetch(event.request).then(response=>{
+        if(response.ok){
+          const copy=response.clone();
+          caches.open(CACHE).then(cache=>cache.put(event.request,copy));
+        }
+        return response;
+      }).catch(()=>cached);
+      return cached||fresh;
+    }));
+    return;
+  }
+
+  event.respondWith(fetch(event.request).then(response=>{
+    if(response.ok){
+      const copy=response.clone();
+      caches.open(CACHE).then(cache=>cache.put(event.request,copy));
+    }
+    return response;
+  }).catch(()=>caches.match(event.request).then(cached=>cached||caches.match('./index.html'))));
+});
 
